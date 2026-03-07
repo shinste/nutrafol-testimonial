@@ -1,0 +1,285 @@
+.testimonial-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-heading {
+  font-family: "Crimson Text", serif;
+}
+
+.testimonial-heading h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.testimonial-heading h2 {
+  color: #007a73;
+  font-size: 16px;
+  margin: 0;
+  line-height: 0;
+}
+
+.testimonial-heading h3 {
+  color: #898989;
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.testimonial-filter {
+  display: flex;
+  gap: 4px;
+  border-color: #cecece;
+  border: 1px #cecece solid;
+  border-radius: 999px;
+  padding: 8px;
+  min-width: fit-content;
+}
+
+.filter-button {
+  background-color: white;
+  border: none;
+  border-radius: 999px;
+  padding-inline: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  font-size: large;
+  transition: background-color 0.25s ease;
+  font-family: "Anonymous Pro", monospace;
+}
+
+.selected-button {
+  background-color: #ecf1f5;
+}
+
+.filter-button:hover {
+  background-color: #ecf1f5;
+}
+
+.filter-button:active {
+  background-color: #cbe2f5;
+}
+
+.reviews-container {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  min-width: 100%;
+  min-height: 380px;
+  flex-shrink: 0;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Anonymous Pro", monospace;
+  box-sizing: border-box;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  /* flex: 1; */
+}
+
+.review-card {
+  background-color: #ecf1f5;
+  border-radius: 12px;
+  padding: 16px;
+  justify-content: start;
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+}
+
+.card-author {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.card-age {
+  font-size: 11px;
+  color: #7c7c7c;
+  font-weight: bold;
+  line-height: 90%;
+}
+
+.card-text {
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 4px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.carousel-parent {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+}
+
+.carousel {
+  display: flex;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  transition-duration: 500ms;
+}
+
+.max-w-lg {
+  max-width: 920px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pagination-container {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+.pagination {
+  height: 10px;
+  border-radius: 999px;
+  background-color: #d9d9d9;
+}
+
+.carousel-button {
+  height: 34px;
+  width: 34px;
+  margin-inline: 30px;
+  border-radius: 999px;
+  border: none;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  background-color: #007a73;
+}
+
+.flex-items-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-button {
+  background-color: #007a73;
+  border: none;
+  border-radius: 6px;
+  padding-bottom: 14px;
+  padding-top: 14px;
+  padding-inline: 10px;
+  font-size: large;
+  font-weight: 500;
+  gap: 8px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #065954;
+}
+
+.cta-arrow {
+  padding: 2px;
+  background-color: #065954;
+  border-radius: 2px;
+}
+
+.cta-button:hover .cta-arrow {
+  background-color: #007a73;
+}
+
+@media (max-width: 600px) {
+  .testimonial-section {
+    width: 100%;
+    padding: 0;
+  }
+
+  .flex-items-center {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .max-w-lg {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .carousel-parent {
+    min-height: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .carousel {
+    width: 100%;
+  }
+
+  .testimonial-heading h1 {
+    font-size: 28px;
+  }
+
+  .testimonial-heading h3 {
+    font-size: 16px;
+  }
+
+  .testimonial-filter {
+    max-width: 95%;
+    gap: 4px;
+  }
+
+  .filter-button {
+    padding-inline: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: small;
+  }
+
+  .reviews-container {
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px;
+    height: fit-content;
+  }
+
+  .column {
+    gap: 10px;
+    width: 100%;
+  }
+
+  .review-card {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .card-author {
+    font-size: 16px;
+  }
+
+  .card-text {
+    font-size: 15px;
+  }
+
+  .carousel-button {
+    height: 28px;
+    width: 28px;
+    margin-inline: 5px;
+  }
+
+  .cta-button {
+    padding-bottom: 12px;
+    padding-top: 12px;
+    font-size: medium;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .cta-arrow {
+    width: 20px;
+  }
+}
