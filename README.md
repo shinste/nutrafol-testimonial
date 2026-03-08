@@ -1,4 +1,4 @@
-# Web Developer Assignment
+# Task 2 - Web Developer Assignment
 
 This repository contains my implementation of the Interactive Customer Testimonial Development assignment.
 
