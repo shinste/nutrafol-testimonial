@@ -1,17 +1,17 @@
-import { useState } from "react";
-import { reviews, type reviewProps } from "./testimonialsData";
-import "./testimonials.css";
-import TestimonyCarousel from "./TestimonyCarousel";
+import { useMemo, useState } from "react";
 import { IoMdArrowForward } from "react-icons/io";
+import { reviews, type reviewProps } from "./testimonialsData";
+import TestimonyCarousel from "./TestimonyCarousel";
+import "./testimonials.css";
 
 const TestimonialSection = () => {
   const [category, setCategory] = useState("All Stories");
   const filters = ["All Stories", "Postpartum", "PCOS/Hormones", "Stress"];
   const [index, setIndex] = useState(0);
-  const filteredReviews: reviewProps[] =
-    category === "All Stories"
-      ? reviews
-      : reviews.filter((r) => r.category === category);
+  const filteredReviews: reviewProps[] = useMemo(() => {
+    if (category === "All Stories") return reviews;
+    return reviews.filter((r) => r.category === category);
+  }, [category]);
 
   return (
     <section className="testimonial-section">

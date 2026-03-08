@@ -50,7 +50,6 @@ const TestimonyCarousel: React.FC<TestimonyCarouselProps> = ({
             {slideIndices.map((slideIdx) => {
               const start = slideIdx * 2;
               const end = start + 2;
-
               return (
                 <div key={slideIdx} className="reviews-container">
                   <div className="column">
