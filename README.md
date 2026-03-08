@@ -36,5 +36,8 @@ The filtering options are the commonalities I've found when going through the re
 #### React Icons
 - I installed react-icons for arrow icons. (Carousel left and right buttons, and the CTA button)
 
+### Caching/Memoization
+- I included some React memoization for the components/computations for this assignment. The benefits from this optimization are marginal, but I wanted to demonstrate my ability to properly use these caching tools that would prove effective in a scaling application.
+
 ### My Approach to the Design
 When approaching this assignment, my primary goal was to design and develop an interactive testimonial section that would strengthen the product experience and support the overall conversion flow. Before designing the section, I took some time to evaluate the product, its target audience, and its strengths, and I found many of the reviews hit those points very well. My plan was to put myself in the shoes of the target audience, considering the worries or concerns they might have before viewing the section and what they would need to garner trust. As I designed the section in Figma, I focused on simplicity and accessibility, as the highest value part of the section was the testimonials. I prioritized keeping the experience clean and fluid, using the carousel, pagination dots, and filtering to ensure the testimonials are effectively highlighted.
